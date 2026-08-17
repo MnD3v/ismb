@@ -80,7 +80,8 @@ nav {
   padding: 10px 14px;
   display: block;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 0.95rem;
 }
 
 .navigation a:hover,
@@ -231,38 +232,45 @@ nav {
   padding-right: 20px;
 }
 
-/* Pill Glassmorphism Badge */
+/* Pill Badge Premium */
 .devise_pill {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 18px;
-  background: rgba(38, 55, 85, 0.45);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 159, 10, 0.5);
-  border-radius: 50px;
+  padding: 8px 22px;
+  background: transparent;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 159, 10, 0.7);
+  border-radius: 100px;
   margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.devise_pill:hover {
+  background: rgba(255, 159, 10, 0.1);
+  transform: translateY(-2px);
 }
 
 .devise_pill img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
 }
 
 .devise_pill span {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   color: #FF9F0A;
-  letter-spacing: 0.5px;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
 /* Titre & Sous-titre animés */
 .hero_title_animated {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3.4rem;
+  font-size: 3.9rem;
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 18px;
@@ -317,8 +325,8 @@ nav {
   padding: 14px 28px;
   border-radius: 8px;
   border: none;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -356,8 +364,8 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 14px 26px;
   border-radius: 8px;
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
   box-shadow: none !important;
   transition: all 0.3s ease;
@@ -380,7 +388,7 @@ nav {
   }
 
   .hero_title_animated {
-    font-size: 2.7rem;
+    font-size: 3.1rem;
   }
 
   .debut {
@@ -404,7 +412,7 @@ nav {
   }
 
   .hero_title_animated {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     line-height: 1.2;
   }
 

@@ -47,7 +47,7 @@ export default function APropos() {
       {/* BANNIÈRE EN-TÊTE INSTITUTIONNELLE MARINE */}
       <section className="bg-marine text-white pt-20 pb-16 px-6 md:px-12 text-center border-b border-white/10">
         <div className="max-w-4xl mx-auto">
-          <span className="text-or font-bold text-xs uppercase tracking-widest bg-or/10 border border-or/20 px-4 py-1.5 rounded-full inline-flex items-center gap-2 mb-4">
+          <span className="text-or font-medium text-xs uppercase tracking-widest bg-transparent border border-or/20 px-4 py-1.5 rounded-full inline-flex items-center gap-2 mb-4">
             <i className="bx bxs-award text-base"></i>
             <span>Excellence depuis 2004</span>
           </span>
@@ -66,7 +66,7 @@ export default function APropos() {
           <span className="text-or font-bold text-xs uppercase tracking-widest block mb-2">
             Notre Vocation
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-marine mb-6">
+          <h2 className="font-serif italic text-3xl md:text-4xl font-bold text-marine mb-6">
             L'Excellence au Service de l'Avenir
           </h2>
           <p className="text-marine font-semibold text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-6">
@@ -87,7 +87,7 @@ export default function APropos() {
               <span className="text-or font-bold text-xs uppercase tracking-widest block mb-1">
                 Notre Histoire
               </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-marine tracking-tight mb-6">
+              <h2 className="font-serif italic text-3xl md:text-4xl font-bold text-marine tracking-tight mb-6">
                 Qui Sommes-Nous ?
               </h2>
             </div>
@@ -143,7 +143,7 @@ export default function APropos() {
           <span className="text-or font-bold text-xs uppercase tracking-widest block mb-1">
             Infrastructures & Encadrement
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-marine tracking-tight mb-3">
+          <h2 className="font-serif italic text-3xl md:text-4xl font-bold text-marine tracking-tight mb-3">
             Nos Moyens Pédagogiques
           </h2>
           <p className="text-gray-600 text-sm md:text-base font-light">
@@ -179,7 +179,7 @@ export default function APropos() {
           <span className="text-or font-bold text-xs uppercase tracking-widest block mb-1">
             L'Esprit ISMB
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-marine tracking-tight mb-3">
+          <h2 className="font-serif italic text-3xl md:text-4xl font-bold text-marine tracking-tight mb-3">
             Nos Valeurs Fondamentales
           </h2>
           <p className="text-gray-600 text-sm md:text-base font-light">

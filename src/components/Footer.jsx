@@ -43,7 +43,7 @@ export default function Footer({ setActivePage }) {
 
           {/* Section Liens rapides - 3 colonnes */}
           <div className="md:col-span-3">
-            <h4 className="text-or font-bold text-xs uppercase tracking-widest bg-or/10 px-3 py-1 rounded-md inline-block mb-6 border border-or/20">
+            <h4 className="text-or font-semibold text-sm uppercase tracking-widest mb-6">
               Navigation
             </h4>
             <ul className="space-y-3 font-light text-sm md:text-base">
@@ -97,7 +97,7 @@ export default function Footer({ setActivePage }) {
 
           {/* Section Coordonnées - 4 colonnes */}
           <div className="md:col-span-4">
-            <h4 className="text-or font-bold text-xs uppercase tracking-widest bg-or/10 px-3 py-1 rounded-md inline-block mb-6 border border-or/20">
+            <h4 className="text-or font-semibold text-sm uppercase tracking-widest mb-6">
               Coordonnées
             </h4>
             <div className="space-y-4 text-sm md:text-base text-white/80 font-light">

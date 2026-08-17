@@ -17,12 +17,12 @@ export default function Galerie() {
       subtitle: "Travaux pratiques de nos étudiants en sciences agronomiques sur nos fermes expérimentales et parcelles agricoles.",
       icon: "bx-leaf",
       images: [
-        { src: '/images/gal_agro1.jpg', caption: "Pratique sur parcelles expérimentales" },
-        { src: '/images/gal_agro2.jpg', caption: "Analyses de sols et cultures" },
-        { src: '/images/gal_agro3.jpg', caption: "Techniques de phytotechnie" },
-        { src: '/images/gal_agro4.jpg', caption: "Ateliers de production végétale" },
-        { src: '/images/gal_agro5.jpg', caption: "Suivi technique sur le terrain" },
-        { src: '/images/gal_agro6.jpg', caption: "Récolte et évaluation agronomique" }
+        { src: '/images/gal_agro1.jpg', caption: "Entretien des infrastructures d'élevage" },
+        { src: '/images/gal_agro2.jpg', caption: "Irrigation et soins aux jeunes plants" },
+        { src: '/images/gal_agro3.jpg', caption: "Techniques d'alimentation animale" },
+        { src: '/images/gal_agro4.jpg', caption: "Pratique sur parcelles expérimentales" },
+        { src: '/images/gal_agro5.jpg', caption: "Suivi sanitaire et soins vétérinaires" },
+        { src: '/images/gal_agro6.jpg', caption: "Évaluation agronomique en verger" }
       ]
     },
     {
@@ -30,9 +30,9 @@ export default function Galerie() {
       subtitle: "Sortie pédagogique des étudiants en Gestion des Archives et Documentation pour l'étude de la conservation du patrimoine.",
       icon: "bx-archive",
       images: [
-        { src: '/images/gal_museum1.jpg', caption: "Étude des fonds d'archives historiques" },
-        { src: '/images/gal_museum2.jpg', caption: "Observation des techniques de conservation" },
-        { src: '/images/gal_museum3.jpg', caption: "Photo institutionnelle de la promotion" }
+        { src: '/images/gal_museum1.jpg', caption: "Façade extérieure du Musée Présidentiel" },
+        { src: '/images/gal_museum2.jpg', caption: "Photo institutionnelle de la promotion" },
+        { src: '/images/gal_museum3.jpg', caption: "Moments d'échange lors de la sortie" }
       ]
     },
     {
@@ -55,7 +55,7 @@ export default function Galerie() {
       {/* BANNIÈRE EN-TÊTE INSTITUTIONNELLE MARINE */}
       <section className="bg-marine text-white pt-20 pb-16 px-6 md:px-12 text-center border-b border-white/10">
         <div className="max-w-4xl mx-auto">
-          <span className="text-or font-bold text-xs uppercase tracking-widest bg-or/10 border border-or/20 px-4 py-1.5 rounded-full inline-flex items-center gap-2 mb-4">
+          <span className="text-or font-medium text-xs uppercase tracking-widest bg-transparent border border-or/20 px-4 py-1.5 rounded-full inline-flex items-center gap-2 mb-4">
             <i className="bx bxs-photo-album text-base"></i>
             <span>Immersion & Vie Étudiante</span>
           </span>
@@ -79,7 +79,7 @@ export default function Galerie() {
                   <i className={`bx ${section.icon} text-base`}></i>
                   <span>Galerie Thématique</span>
                 </span>
-                <h2 className="font-serif text-2xl md:text-3xl font-bold text-marine tracking-tight">
+                <h2 className="font-serif italic text-2xl md:text-3xl font-bold text-marine tracking-tight">
                   {section.title}
                 </h2>
               </div>
