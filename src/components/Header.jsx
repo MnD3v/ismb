@@ -21,10 +21,16 @@ export default function Header({ activePage, setActivePage }) {
   return (
     <header>
       <div className="logo">
-        <a href="#" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>
-          <img src="/images/logo_header.png" alt="Logo ISMB" style={{ width: '100%' }} />
+        <a 
+          href="#" 
+          onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
+          style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}
+        >
+          <img src="/images/logo_header.png" alt="Logo ISMB" style={{ width: '100%', maxWidth: '55px' }} />
+          <h4 style={{ color: 'white', margin: 0, lineHeight: '1.4' }}>
+            Institut Supérieur <br /> Monseigneur BAKPESSI
+          </h4>
         </a>
-        <h4 style={{ color: 'white' }}>Institut Supérieur Monseigneur BAKPESSI</h4>
       </div>
 
       <nav id="menu" className={isNavOpen ? 'active' : ''}>
