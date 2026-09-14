@@ -239,14 +239,17 @@ export default function Home({ setActivePage }) {
         {/* Actions & Navigation */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
           <div className="flex flex-wrap items-center gap-3 justify-center md:justify-start">
-            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations(); }}>
+            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations('agronomie'); }}>
               <i className="bx bx-leaf text-or text-lg"></i> Agronomie
             </span>
-            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations(); }}>
-              <i className="bx bx-laptop text-or text-lg"></i> Technologie
+            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations('technologie'); }}>
+              <i className="bx bx-laptop text-or text-lg"></i> Technologie & IA
             </span>
-            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations(); }}>
-              <i className="bx bx-bar-chart-alt-2 text-or text-lg"></i> Sciences Éco & Administration
+            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations('economie_gestion'); }}>
+              <i className="bx bx-bar-chart-alt-2 text-or text-lg"></i> Sciences Éco & Management
+            </span>
+            <span className="bg-white border border-gray-200 text-marine hover:bg-marine hover:text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer shadow-none flex items-center gap-2" onClick={(e) => { e.preventDefault(); handleNavFormations('droit'); }}>
+              <i className="bx bx-shield-quarter text-or text-lg"></i> Droit Privé
             </span>
           </div>
 
@@ -256,7 +259,7 @@ export default function Home({ setActivePage }) {
             className="no-underline"
           >
             <button className="bg-marine hover:bg-or hover:!text-black text-white px-7 py-3.5 rounded-lg font-semibold text-base transition-all duration-300 flex items-center gap-3 cursor-pointer !shadow-none group">
-              <span>Explorer nos 8 filières</span>
+              <span>Explorer nos filières & parcours</span>
               <i className="bx bx-right-arrow-alt text-xl transition-transform duration-300 group-hover:translate-x-1"></i>
             </button>
           </a>
@@ -331,6 +334,8 @@ export default function Home({ setActivePage }) {
                   <i className="bx bx-collection text-base"></i>Filières disponibles :
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600 group-hover:text-white/95 transition-colors max-h-52 overflow-y-auto pr-1">
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span className="font-semibold text-or">Management des Entreprises (Kara & Lomé)</span></li>
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span className="font-semibold text-or">Communication & Marketing (Kara & Lomé)</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Banque & Finance</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Commerce International</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Comptabilité & Gestion des Entreprises</span></li>
@@ -378,8 +383,8 @@ export default function Home({ setActivePage }) {
                   <i className="bx bx-collection text-base"></i>Filières disponibles :
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600 group-hover:text-white/95 transition-colors">
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span className="font-semibold text-or">Dév. Applications & IA (Kara & Lomé)</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Maintenance Informatique & Réseaux</span></li>
-                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Développement d'Applications</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Électronique</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Électrotechnique</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Informatique Industrielle</span></li>
@@ -389,6 +394,52 @@ export default function Home({ setActivePage }) {
 
             <button 
               onClick={() => handleNavFormations('technologie')} 
+              className="mt-6 bg-gray-100 group-hover:bg-or text-marine group-hover:text-black font-semibold px-5 py-3.5 rounded-xl !shadow-none flex items-center justify-between w-full transition-all duration-300 cursor-pointer group/btn"
+            >
+              <span>Découvrir le cursus</span>
+              <i className="bx bx-right-arrow-alt text-xl transition-transform duration-300 group-hover/btn:translate-x-1.5"></i>
+            </button>
+          </div>
+
+          {/* 3. Sciences Juridiques & Politiques */}
+          <div className="bg-white hover:bg-marine text-gray-800 hover:text-white border border-gray-200/80 hover:border-marine p-7 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="flex items-center justify-between gap-3 mb-5">
+                <div className="w-12 h-12 rounded-2xl bg-marine/10 group-hover:bg-or/20 flex items-center justify-center text-marine group-hover:text-or text-2xl font-bold transition-colors">
+                  <i className="bx bx-shield-quarter"></i>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xs font-bold uppercase tracking-wider text-or bg-or/10 group-hover:bg-or group-hover:text-black px-2.5 py-1 rounded-full transition-colors">
+                    Licence
+                  </span>
+                  <span className="text-[11px] font-bold text-marine group-hover:text-white bg-or/20 group-hover:bg-white/15 px-2 py-0.5 rounded-full border border-or/40">
+                    Kara & Lomé
+                  </span>
+                </div>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-marine group-hover:text-white mb-2 transition-colors">
+                Sciences Juridiques & Droit
+              </h3>
+              <p className="text-gray-600 group-hover:text-white/80 text-sm leading-relaxed mb-4 transition-colors">
+                Formation juridique d'élite aux carrières judiciaires, au barreau et au conseil d'entreprise.
+              </p>
+
+              {/* Liste explicite des filières */}
+              <div className="my-4 pt-4 border-t border-gray-100 group-hover:border-white/15 transition-colors">
+                <div className="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-or mb-3 flex items-center gap-1.5">
+                  <i className="bx bx-collection text-base"></i>Parcours d'excellence :
+                </div>
+                <ul className="space-y-2 text-sm text-gray-600 group-hover:text-white/95 transition-colors">
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span className="font-semibold text-or">Droit Privé (Kara & Lomé)</span></li>
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Droit des Affaires & Contentieux</span></li>
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Conseil Juridique d'Entreprise</span></li>
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Carrières Judiciaires & Magistrature</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <button 
+              onClick={() => handleNavFormations('droit')} 
               className="mt-6 bg-gray-100 group-hover:bg-or text-marine group-hover:text-black font-semibold px-5 py-3.5 rounded-xl !shadow-none flex items-center justify-between w-full transition-all duration-300 cursor-pointer group/btn"
             >
               <span>Découvrir le cursus</span>
@@ -543,9 +594,7 @@ export default function Home({ setActivePage }) {
                   <i className="bx bx-collection text-base"></i>Filières disponibles :
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600 group-hover:text-white/95 transition-colors">
-                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Archives & Numérisation</span></li>
-                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Documentation Spécialisée</span></li>
-                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Bibliothéconomie</span></li>
+                  <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Archives, Bibliothèque et Documentation</span></li>
                   <li className="flex items-start gap-2"><i className="bx bx-check text-or text-lg shrink-0 mt-0.5"></i><span>Communication des Entreprises</span></li>
                 </ul>
               </div>
