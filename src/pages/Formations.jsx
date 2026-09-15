@@ -9,10 +9,10 @@ export default function Formations() {
       title: "Sciences Économiques et de Gestion",
       intro: "Formations de techniciens supérieurs en gestion, informatique et commerce.",
       courses: [
-        { name: "Assistant de Gestion PME/PMI", level: "BTS", desc: "Polyvalence administrative, comptable et commerciale pour seconder la direction.", price: "250 000" },
-        { name: "Informatique de Gestion", level: "BTS", desc: "Gestion des systèmes d'information, réseaux et bases de données.", price: "250 000" },
-        { name: "Comptabilité et Gestion des Entreprises", level: "BTS", desc: "Tenue comptable, contrôle de gestion et audit budgétaire.", price: "250 000" },
-        { name: "Gestion des ressources humaines", level: "BTS", desc: "Recrutement, formation, paie et développement du personnel.", price: "250 000" }
+        { name: "Assistant de Gestion PME/PMI", level: "BTS", desc: "Polyvalence administrative, comptable et commerciale pour seconder la direction." },
+        { name: "Informatique de Gestion", level: "BTS", desc: "Gestion des systèmes d'information, réseaux et bases de données." },
+        { name: "Comptabilité et Gestion des Entreprises", level: "BTS", desc: "Tenue comptable, contrôle de gestion et audit budgétaire." },
+        { name: "Gestion des ressources humaines", level: "BTS", desc: "Recrutement, formation, paie et développement du personnel." }
       ]
     },
     {
@@ -21,9 +21,9 @@ export default function Formations() {
       title: "Sciences Administratives",
       intro: "Maîtrise des rouages administratifs, de la communication d'entreprise et de l'assistanat de direction.",
       courses: [
-        { name: "Secrétariat de Direction", level: "BTS", desc: "Organisation administrative de haut niveau, communication exécutive et planification.", price: "250 000" },
-        { name: "Communication des Entreprises", level: "BTS", desc: "Relations publiques, communication digitale, image de marque et stratégie média.", price: "250 000" },
-        { name: "Assistant administratif", level: "BTS", desc: "Gestion des procédures administratives, rédaction officielle et coordination.", price: "250 000" }
+        { name: "Secrétariat de Direction", level: "BTS", desc: "Organisation administrative de haut niveau, communication exécutive et planification." },
+        { name: "Communication des Entreprises", level: "BTS", desc: "Relations publiques, communication digitale, image de marque et stratégie média." },
+        { name: "Assistant administratif", level: "BTS", desc: "Gestion des procédures administratives, rédaction officielle et coordination." }
       ]
     },
     {
@@ -32,9 +32,9 @@ export default function Formations() {
       title: "Sciences de l'Information Documentaire et de la Communication",
       intro: "Expertise en gestion du patrimoine documentaire, archivage légal et administration des bibliothèques.",
       courses: [
-        { name: "Archives", level: "BTS", desc: "Conservation physique, classement légal et gestion électronique de documents (GED).", price: "350 000" },
-        { name: "Documentation", level: "BTS", desc: "Recherche informationnelle, structuration des données et veille stratégique.", price: "350 000" },
-        { name: "Bibliothéconomie", level: "BTS", desc: "Administration de bibliothèques, catalogage numérique et diffusion de l'information.", price: "350 000" }
+        { name: "Archives", level: "BTS", desc: "Conservation physique, classement légal et gestion électronique de documents (GED)." },
+        { name: "Documentation", level: "BTS", desc: "Recherche informationnelle, structuration des données et veille stratégique." },
+        { name: "Bibliothéconomie", level: "BTS", desc: "Administration de bibliothèques, catalogage numérique et diffusion de l'information." }
       ]
     },
     {
@@ -43,11 +43,11 @@ export default function Formations() {
       title: "Sciences et Technologies",
       intro: "Formations techniques préparant aux métiers de l'ingénierie, de l'informatique et des réseaux.",
       courses: [
-        { name: "Electronique", level: "BTS", desc: "Conception de circuits, automatismes industriels et maintenance électronique.", price: "275 000" },
-        { name: "Electrotechnique", level: "BTS", desc: "Installations électriques, diagnostic et maintenance électrique.", price: "275 000" },
-        { name: "Maintenance Informatique et Réseaux", level: "BTS", desc: "Administration de serveurs, architecture réseau, sécurité et maintenance hardware.", price: "275 000" },
-        { name: "Développement d’Applications", level: "BTS", desc: "Programmation web et mobile, bases de données, génie logiciel et projets agiles.", price: "275 000" },
-        { name: "Informatique industrielle", level: "BTS", desc: "Systèmes embarqués, programmation d'automates, robotique et contrôle de processus.", price: "275 000" }
+        { name: "Electronique", level: "BTS", desc: "Conception de circuits, automatismes industriels et maintenance électronique." },
+        { name: "Electrotechnique", level: "BTS", desc: "Installations électriques, diagnostic et maintenance électrique." },
+        { name: "Maintenance Informatique et Réseaux", level: "BTS", desc: "Administration de serveurs, architecture réseau, sécurité et maintenance hardware." },
+        { name: "Développement d’Applications", level: "BTS", desc: "Programmation web et mobile, bases de données, génie logiciel et projets agiles." },
+        { name: "Informatique industrielle", level: "BTS", desc: "Systèmes embarqués, programmation d'automates, robotique et contrôle de processus." }
       ]
     },
 
@@ -86,10 +86,7 @@ export default function Formations() {
           name: "Droit privé",
           level: "Licence",
           desc: "Droit civil, droit commercial et des affaires, droit du travail, droit pénal et contentieux des affaires.",
-          cities: [
-            { city: "Kara", price: "400 000" },
-            { city: "Lomé", price: "450 000" }
-          ]
+          campuses: ["Kara", "Lomé"]
         }
       ]
     },
@@ -103,24 +100,18 @@ export default function Formations() {
           name: "Management des entreprises",
           level: "Licence",
           desc: "Pilotage stratégique, gouvernance d'entreprise, entrepreneuriat, gestion de projet et management des organisations.",
-          cities: [
-            { city: "Kara", price: "400 000" },
-            { city: "Lomé", price: "450 000" }
-          ]
+          campuses: ["Kara", "Lomé"]
         },
         {
           name: "Communication & marketing",
           level: "Licence",
           desc: "Stratégies de communication globale, marketing digital, branding, relations publiques, publicité et gestion de marque.",
-          cities: [
-            { city: "Kara", price: "400 000" },
-            { city: "Lomé", price: "450 000" }
-          ]
+          campuses: ["Kara", "Lomé"]
         },
-        { name: "Comptabilité, Contrôle et audit", level: "Licence", desc: "Expertise comptable, audit financier et contrôle de gestion approfondi.", price: "400 000" },
-        { name: "Gestion des ressources humaines", level: "Licence", desc: "Management des RH, droit du travail et GPEC.", price: "400 000" },
-        { name: "Finance, Banque et Assurance", level: "Licence", desc: "Ingénierie financière, marchés de capitaux et gestion des risques.", price: "400 000" },
-        { name: "Transport et logistiques", level: "Licence", desc: "Supply chain management global et optimisation logistique.", price: "400 000" }
+        { name: "Comptabilité, Contrôle et audit", level: "Licence", desc: "Expertise comptable, audit financier et contrôle de gestion approfondi." },
+        { name: "Gestion des ressources humaines", level: "Licence", desc: "Management des RH, droit du travail et GPEC." },
+        { name: "Finance, Banque et Assurance", level: "Licence", desc: "Ingénierie financière, marchés de capitaux et gestion des risques." },
+        { name: "Transport et logistiques", level: "Licence", desc: "Supply chain management global et optimisation logistique." }
       ]
     },
     {
@@ -133,16 +124,13 @@ export default function Formations() {
           name: "Développement d’applications & intelligence artificielle",
           level: "Licence",
           desc: "Génie logiciel avancé, architecture cloud, algorithmes prédictifs, machine learning et solutions d'intelligence artificielle.",
-          cities: [
-            { city: "Kara", price: "400 000" },
-            { city: "Lomé", price: "450 000" }
-          ]
+          campuses: ["Kara", "Lomé"]
         },
-        { name: "Maintenance Informatique et réseaux", level: "Licence", desc: "Administration avancée, sécurité réseau et supervision.", price: "400 000" },
-        { name: "Electrotechnique", level: "Licence", desc: "Conception et supervision d'installations électriques complexes.", price: "400 000" },
-        { name: "Informatique Industrielle", level: "Licence", desc: "Automatisme avancé, robotique et systèmes cyber-physiques.", price: "400 000" },
-        { name: "Electronique", level: "Licence", desc: "Ingénierie électronique et conception de cartes de circuits imprimés.", price: "400 000" },
-        { name: "Architecture Métallique", level: "Licence", desc: "Conception, calcul, et dimensionnement de structures métalliques.", price: "400 000" }
+        { name: "Maintenance Informatique et réseaux", level: "Licence", desc: "Administration avancée, sécurité réseau et supervision." },
+        { name: "Electrotechnique", level: "Licence", desc: "Conception et supervision d'installations électriques complexes." },
+        { name: "Informatique Industrielle", level: "Licence", desc: "Automatisme avancé, robotique et systèmes cyber-physiques." },
+        { name: "Electronique", level: "Licence", desc: "Ingénierie électronique et conception de cartes de circuits imprimés." },
+        { name: "Architecture Métallique", level: "Licence", desc: "Conception, calcul, et dimensionnement de structures métalliques." }
       ]
     },
     {
@@ -151,10 +139,10 @@ export default function Formations() {
       title: "Sciences Agronomiques",
       intro: "Ingénierie agricole durable et élevage moderne pour répondre aux enjeux alimentaires.",
       courses: [
-        { name: "Agrobusiness", level: "Licence", desc: "Gestion stratégique et économique d'exploitations agricoles.", price: "300 000" },
-        { name: "Production Animale (Zootechnie)", level: "Licence", desc: "Techniques de pointe en élevage, génétique et nutrition animale.", price: "300 000" },
-        { name: "Santé animale", level: "Licence", desc: "Prévention, diagnostic clinique et épidémiologie vétérinaire.", price: "300 000" },
-        { name: "Production Végétale (Phytotechnie)", level: "Licence", desc: "Amélioration des cultures et ingénierie de la production végétale.", price: "300 000" }
+        { name: "Agrobusiness", level: "Licence", desc: "Gestion stratégique et économique d'exploitations agricoles." },
+        { name: "Production Animale (Zootechnie)", level: "Licence", desc: "Techniques de pointe en élevage, génétique et nutrition animale." },
+        { name: "Santé animale", level: "Licence", desc: "Prévention, diagnostic clinique et épidémiologie vétérinaire." },
+        { name: "Production Végétale (Phytotechnie)", level: "Licence", desc: "Amélioration des cultures et ingénierie de la production végétale." }
       ]
     },
     {
@@ -163,12 +151,9 @@ export default function Formations() {
       title: "Sciences de l'Information Documentaire et de la Communication",
       intro: "Management supérieur de l'information et des archives à l'ère du numérique.",
       courses: [
-        { 
-          name: "Archives, Bibliothèque et Documentation", 
-          level: "Licence", 
-          desc: "Management supérieur de l'information, archivage physique et électronique (GED), gestion moderne des bibliothèques et ingénierie documentaire.", 
-          price: "450 000" 
-        }
+        { name: "Archives", level: "Licence", desc: "Politiques d'archivage, GED et conservation préventive." },
+        { name: "Documentation", level: "Licence", desc: "Veille stratégique, architecture de l'information et data management." },
+        { name: "Bibliothéconomie", level: "Licence", desc: "Management de bibliothèques et médiation culturelle numérique." }
       ]
     },
     {
@@ -177,7 +162,7 @@ export default function Formations() {
       title: "Sciences Administratives",
       intro: "Expertise en management administratif et coordination de direction.",
       courses: [
-        { name: "Assistant administratif", level: "Licence", desc: "Management des procédures administratives et pilotage d'équipe.", price: "400 000" }
+        { name: "Assistant administratif", level: "Licence", desc: "Management des procédures administratives et pilotage d'équipe." }
       ]
     },
     {
@@ -186,7 +171,7 @@ export default function Formations() {
       title: "Sciences de la Vie et de la Terre",
       intro: "Étude, préservation et gestion durable de l'environnement et des écosystèmes.",
       courses: [
-        { name: "Ecologie et environnement", level: "Licence", desc: "Études d'impact, gestion des milieux naturels et audit écologique.", price: "400 000" }
+        { name: "Ecologie et environnement", level: "Licence", desc: "Études d'impact, gestion des milieux naturels et audit écologique." }
       ]
     },
 
@@ -238,7 +223,6 @@ export default function Formations() {
 
       {/* CATALOGUE SUR FOND CLAIR ET PROPRE */}
       <section className="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-20">
-
         {departments.map((dept, dIdx) => (
           <div key={dIdx} id={dept.id} className="scroll-mt-28">
             {/* En-tête du pôle */}
@@ -268,10 +252,10 @@ export default function Formations() {
                       <span className="text-xs font-bold uppercase tracking-wider text-or bg-or/10 group-hover:bg-or group-hover:text-black px-3 py-1 rounded-full transition-colors">
                         {course.level}
                       </span>
-                      {course.cities ? (
+                      {course.campuses ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-marine group-hover:text-white bg-or/20 group-hover:bg-white/15 px-2.5 py-1 rounded-full border border-or/40">
                           <i className="bx bx-buildings text-or"></i>
-                          <span>Kara & Lomé</span>
+                          <span>{course.campuses.join(' & ')}</span>
                         </span>
                       ) : (
                         <i className="bx bx-check-circle text-or text-xl opacity-80 group-hover:scale-110 transition-transform"></i>
@@ -284,43 +268,6 @@ export default function Formations() {
                     <p className="text-gray-600 group-hover:text-white/80 text-xs md:text-sm font-light leading-relaxed mb-6 transition-colors">
                       {course.desc}
                     </p>
-                    
-                    {/* Prices block */}
-                    <div className="mt-auto flex flex-col gap-2 mb-6">
-                      {course.cities ? (
-                        <div className="bg-gray-50/90 border border-gray-200/90 group-hover:bg-white/10 group-hover:border-white/20 p-3 rounded-xl transition-colors">
-                          <div className="flex items-center justify-between text-[10px] text-gray-500 group-hover:text-white/70 uppercase font-semibold mb-2">
-                            <span className="flex items-center gap-1">
-                              <i className="bx bx-map-pin text-or text-xs"></i>
-                              <span>Scolarité par ville</span>
-                            </span>
-                            <span className="text-[10px] font-bold text-or bg-or/10 group-hover:bg-or group-hover:text-black px-1.5 py-0.5 rounded">
-                              Annuelle
-                            </span>
-                          </div>
-                          <div className="grid grid-cols-2 gap-2 text-center">
-                            {course.cities.map((c, i) => (
-                              <div 
-                                key={i} 
-                                className="bg-white group-hover:bg-white/15 border border-gray-200/60 group-hover:border-white/20 py-2 px-2 rounded-lg transition-colors shadow-xs"
-                              >
-                                <div className="text-[11px] uppercase font-bold text-gray-500 group-hover:text-white/80">
-                                  {c.city}
-                                </div>
-                                <div className="text-sm font-bold text-marine group-hover:text-or">
-                                  {c.price} <span className="text-[10px] font-normal">FCFA</span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ) : course.price ? (
-                        <div className="bg-gray-50/50 border border-gray-100 group-hover:bg-white/10 group-hover:border-white/20 px-3 py-1.5 rounded-lg flex flex-col transition-colors self-start">
-                          <span className="text-[10px] text-gray-400 group-hover:text-white/60 uppercase font-semibold">Scolarité</span>
-                          <span className="text-sm font-bold text-marine group-hover:text-or">{course.price} <span className="text-xs font-normal">FCFA</span></span>
-                        </div>
-                      ) : null}
-                    </div>
                   </div>
 
                   <button
@@ -357,11 +304,10 @@ export default function Formations() {
             </div>
 
             <div className="flex items-start gap-3">
-              <i className="bx bx-money text-or text-xl shrink-0 mt-0.5"></i>
+              <i className="bx bx-credit-card text-or text-xl shrink-0 mt-0.5"></i>
               <div>
-                <strong className="text-marine text-sm font-semibold block mb-0.5">Frais d'inscription</strong>
-                <span className="text-gray-500 text-xs font-light block">BTS : <strong className="text-gray-700">20 000 FCFA</strong></span>
-                <span className="text-gray-500 text-xs font-light block">Licence : <strong className="text-gray-700">30 000 FCFA</strong></span>
+                <strong className="text-marine text-sm font-semibold block mb-0.5">Paiement échelonné</strong>
+                <span className="text-gray-500 text-xs font-light block">Modalités souples et facilités de règlement adaptées.</span>
               </div>
             </div>
 
